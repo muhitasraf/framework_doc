@@ -1,0 +1,89 @@
+[15-Apr-2023 09:43:18 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in D:\xampp\htdocs\sage_doc\bootstrap\DB.php:37
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\DB.php(37): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Models\Model.php(10): Core\DB::instance()
+#2 D:\xampp\htdocs\sage_doc\app\Models\DashBoard.php(8): App\Models\Model->__construct()
+#3 D:\xampp\htdocs\sage_doc\app\Controllers\DocController.php(11): App\Models\DashBoard->__construct()
+#4 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(44): App\Controllers\DocController->__construct()
+#5 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#6 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\DB.php on line 37
+[15-Apr-2023 12:34:13 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 PAGE NOT FOUND in D:\xampp\htdocs\sage_doc\bootstrap\View.php:14
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\helpers\app.php(23): Core\Application->render('doc/index', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\DocController.php(16): view('doc/index', Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(50): App\Controllers\DocController->index(Object(Core\Request))
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\View.php on line 14
+[15-Apr-2023 12:35:45 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\sage_doc\bootstrap\Application.php:25
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#1 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\Application.php on line 25
+[15-Apr-2023 12:36:14 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 PAGE NOT FOUND in D:\xampp\htdocs\sage_doc\bootstrap\View.php:14
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\helpers\app.php(23): Core\Application->render('doc/index', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\DocController.php(16): view('doc/index', Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(50): App\Controllers\DocController->index(Object(Core\Request))
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\View.php on line 14
+[15-Apr-2023 12:40:50 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 PAGE NOT FOUND in D:\xampp\htdocs\sage_doc\bootstrap\View.php:14
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\helpers\app.php(23): Core\Application->render('doc/index', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\DocController.php(16): view('doc/index', Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(50): App\Controllers\DocController->index(Object(Core\Request))
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\View.php on line 14
+[15-Apr-2023 12:43:23 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 PAGE NOT FOUND in D:\xampp\htdocs\sage_doc\bootstrap\View.php:14
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\helpers\app.php(23): Core\Application->render('doc/index', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\DocController.php(16): view('doc/index', Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(50): App\Controllers\DocController->index(Object(Core\Request))
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\View.php on line 14
+[15-Apr-2023 12:43:34 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\sage_doc\bootstrap\Application.php:25
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#1 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\Application.php on line 25
+[15-Apr-2023 12:43:36 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\sage_doc\bootstrap\Application.php:25
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#1 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\Application.php on line 25
+[15-Apr-2023 12:45:42 Asia/Dhaka] PHP Warning:  Undefined variable $router in D:\xampp\htdocs\sage_doc\routes\web.php on line 37
+[15-Apr-2023 12:45:42 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to a member function map() on null in D:\xampp\htdocs\sage_doc\routes\web.php:37
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\sage_doc\routes\web.php on line 37
+[15-Apr-2023 12:45:42 Asia/Dhaka] PHP Warning:  Undefined variable $router in D:\xampp\htdocs\sage_doc\routes\web.php on line 37
+[15-Apr-2023 12:45:42 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to a member function map() on null in D:\xampp\htdocs\sage_doc\routes\web.php:37
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\sage_doc\routes\web.php on line 37
+[15-Apr-2023 12:45:49 Asia/Dhaka] PHP Warning:  Undefined variable $router in D:\xampp\htdocs\sage_doc\routes\web.php on line 37
+[15-Apr-2023 12:45:49 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to a member function map() on null in D:\xampp\htdocs\sage_doc\routes\web.php:37
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\sage_doc\routes\web.php on line 37
+[15-Apr-2023 12:46:03 Asia/Dhaka] PHP Warning:  Undefined variable $router in D:\xampp\htdocs\sage_doc\routes\web.php on line 37
+[15-Apr-2023 12:46:03 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to a member function map() on null in D:\xampp\htdocs\sage_doc\routes\web.php:37
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\sage_doc\routes\web.php on line 37

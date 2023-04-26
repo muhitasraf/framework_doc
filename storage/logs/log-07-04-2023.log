@@ -1,0 +1,52 @@
+[07-Apr-2023 15:51:00 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: Class Does Not Found. in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php:25
+Stack trace:
+#0 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\routes\web.php(59): Core\Application->run()
+#1 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('E:\\Portable Sof...')
+#2 {main}
+  thrown in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php on line 25
+[07-Apr-2023 19:56:34 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pharmacy_data.tranmaster' doesn't exist in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:141
+Stack trace:
+#0 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(141): PDO->query('SELECT invoice_...')
+#1 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(21): Core\DB::query('SELECT invoice_...')
+#2 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->create(Object(Core\Request))
+#3 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\routes\web.php(59): Core\Application->run()
+#4 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('E:\\Portable Sof...')
+#5 {main}
+  thrown in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 141
+[07-Apr-2023 19:58:17 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'new_invoice_no' in 'field list' in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:134
+Stack trace:
+#0 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(134): PDO->prepare('SELECT id, comp...')
+#1 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(29): Core\DB->fetchAll()
+#2 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->create(Object(Core\Request))
+#3 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\routes\web.php(59): Core\Application->run()
+#4 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('E:\\Portable Sof...')
+#5 {main}
+  thrown in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 134
+[07-Apr-2023 22:32:37 Asia/Dhaka] PHP Notice:  Undefined index: purchase_name in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 35
+[07-Apr-2023 22:32:37 Asia/Dhaka] PHP Notice:  Undefined index: purchase_email in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 36
+[07-Apr-2023 22:32:37 Asia/Dhaka] PHP Notice:  Undefined index: purchase_number in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 37
+[07-Apr-2023 22:32:37 Asia/Dhaka] PHP Notice:  Undefined index: purchase_address in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 38
+[07-Apr-2023 22:32:37 Asia/Dhaka] PHP Notice:  Undefined index: purchase_status in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 39
+[07-Apr-2023 22:32:37 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pharmacy_data.purchase' doesn't exist in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:168
+Stack trace:
+#0 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(168): PDO->prepare('INSERT INTO pur...')
+#1 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(45): Core\DB->insert(Array)
+#2 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->store(Object(Core\Request))
+#3 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\routes\web.php(59): Core\Application->run()
+#4 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('E:\\Portable Sof...')
+#5 {main}
+  thrown in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 168
+[07-Apr-2023 22:32:45 Asia/Dhaka] PHP Notice:  Undefined index: purchase_name in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 35
+[07-Apr-2023 22:32:45 Asia/Dhaka] PHP Notice:  Undefined index: purchase_email in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 36
+[07-Apr-2023 22:32:45 Asia/Dhaka] PHP Notice:  Undefined index: purchase_number in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 37
+[07-Apr-2023 22:32:45 Asia/Dhaka] PHP Notice:  Undefined index: purchase_address in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 38
+[07-Apr-2023 22:32:45 Asia/Dhaka] PHP Notice:  Undefined index: purchase_status in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 39
+[07-Apr-2023 22:32:45 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pharmacy_data.purchase' doesn't exist in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:168
+Stack trace:
+#0 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(168): PDO->prepare('INSERT INTO pur...')
+#1 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(45): Core\DB->insert(Array)
+#2 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->store(Object(Core\Request))
+#3 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\routes\web.php(59): Core\Application->run()
+#4 E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('E:\\Portable Sof...')
+#5 {main}
+  thrown in E:\Portable Software\XAMPP\App\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 168

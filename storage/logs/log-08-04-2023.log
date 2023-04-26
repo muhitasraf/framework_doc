@@ -1,0 +1,59 @@
+[08-Apr-2023 09:21:41 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:37
+Stack trace:
+#0 D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(37): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\pharmacy-mvc\app\Models\Model.php(10): Core\DB::instance()
+#2 D:\xampp\htdocs\pharmacy-mvc\app\Models\Company.php(8): App\Models\Model->__construct()
+#3 D:\xampp\htdocs\pharmacy-mvc\app\Controllers\CompanyController.php(11): App\Models\Company->__construct()
+#4 D:\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(39): App\Controllers\CompanyController->__construct()
+#5 D:\xampp\htdocs\pharmacy-mvc\routes\web.php(51): Core\Application->run()
+#6 D:\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 37
+[08-Apr-2023 11:18:37 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_name" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 36
+[08-Apr-2023 11:18:37 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_email" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 37
+[08-Apr-2023 11:18:37 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_number" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 38
+[08-Apr-2023 11:18:37 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_address" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 39
+[08-Apr-2023 11:18:37 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_status" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 40
+[08-Apr-2023 11:18:37 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pharmacy_data.purchase' doesn't exist in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:168
+Stack trace:
+#0 D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(168): PDO->prepare('INSERT INTO pur...')
+#1 D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(46): Core\DB->insert(Array)
+#2 D:\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->store(Object(Core\Request))
+#3 D:\xampp\htdocs\pharmacy-mvc\routes\web.php(63): Core\Application->run()
+#4 D:\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 168
+[08-Apr-2023 15:35:07 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_name" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 40
+[08-Apr-2023 15:35:07 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_email" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 41
+[08-Apr-2023 15:35:07 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_number" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 42
+[08-Apr-2023 15:35:07 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_address" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 43
+[08-Apr-2023 15:35:07 Asia/Dhaka] PHP Warning:  Undefined array key "purchase_status" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 44
+[08-Apr-2023 15:35:07 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pharmacy_data.purchase' doesn't exist in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:168
+Stack trace:
+#0 D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(168): PDO->prepare('INSERT INTO pur...')
+#1 D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(50): Core\DB->insert(Array)
+#2 D:\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->store(Object(Core\Request))
+#3 D:\xampp\htdocs\pharmacy-mvc\routes\web.php(63): Core\Application->run()
+#4 D:\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 168
+[08-Apr-2023 15:40:17 Asia/Dhaka] PHP Warning:  Undefined array key "brand_id" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 117
+[08-Apr-2023 15:40:17 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4 in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:141
+Stack trace:
+#0 D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(141): PDO->query('SELECT b.id, b....')
+#1 D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(122): Core\DB::query('SELECT b.id, b....')
+#2 D:\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->single_brand(Object(Core\Request))
+#3 D:\xampp\htdocs\pharmacy-mvc\routes\web.php(62): Core\Application->run()
+#4 D:\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 141
+[08-Apr-2023 15:49:58 Asia/Dhaka] PHP Warning:  Undefined array key "brand_id" in D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php on line 117
+[08-Apr-2023 15:49:58 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4 in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:141
+Stack trace:
+#0 D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(141): PDO->query('SELECT b.id, b....')
+#1 D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(122): Core\DB::query('SELECT b.id, b....')
+#2 D:\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(45): App\Controllers\PurchaseController->single_brand(Object(Core\Request))
+#3 D:\xampp\htdocs\pharmacy-mvc\routes\web.php(62): Core\Application->run()
+#4 D:\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 141

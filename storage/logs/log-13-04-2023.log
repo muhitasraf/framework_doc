@@ -1,0 +1,75 @@
+[13-Apr-2023 09:41:38 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in D:\xampp\htdocs\sage_doc\bootstrap\DB.php:37
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\DB.php(37): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Models\Model.php(10): Core\DB::instance()
+#2 D:\xampp\htdocs\sage_doc\app\Models\Description.php(8): App\Models\Model->__construct()
+#3 D:\xampp\htdocs\sage_doc\app\Controllers\DescriptionController.php(11): App\Models\Description->__construct()
+#4 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(44): App\Controllers\DescriptionController->__construct()
+#5 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#6 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\DB.php on line 37
+[13-Apr-2023 09:41:44 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in D:\xampp\htdocs\sage_doc\bootstrap\DB.php:37
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\DB.php(37): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Models\Model.php(10): Core\DB::instance()
+#2 D:\xampp\htdocs\sage_doc\app\Models\DashBoard.php(8): App\Models\Model->__construct()
+#3 D:\xampp\htdocs\sage_doc\app\Controllers\DocController.php(11): App\Models\DashBoard->__construct()
+#4 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(44): App\Controllers\DocController->__construct()
+#5 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#6 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\DB.php on line 37
+[13-Apr-2023 10:13:57 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token ";" in D:\xampp\htdocs\sage_doc\resources\views\description\edit.php on line 30
+[13-Apr-2023 10:18:09 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'datails' in 'field list' in D:\xampp\htdocs\sage_doc\bootstrap\DB.php:191
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\DB.php(191): PDO->prepare('UPDATE descript...')
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\DescriptionController.php(72): Core\DB->update(Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(50): App\Controllers\DescriptionController->update(Object(Core\Request))
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\DB.php on line 191
+[13-Apr-2023 10:20:52 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'datails' in 'field list' in D:\xampp\htdocs\sage_doc\bootstrap\DB.php:191
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\DB.php(191): PDO->prepare('UPDATE descript...')
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\DescriptionController.php(72): Core\DB->update(Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(50): App\Controllers\DescriptionController->update(Object(Core\Request))
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\DB.php on line 191
+[13-Apr-2023 11:01:41 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\sage_doc\bootstrap\Application.php:25
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#1 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\Application.php on line 25
+[13-Apr-2023 11:02:56 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\sage_doc\bootstrap\Application.php:25
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#1 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\Application.php on line 25
+[13-Apr-2023 11:06:42 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 PAGE NOT FOUND in D:\xampp\htdocs\sage_doc\bootstrap\View.php:14
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\helpers\app.php(23): Core\Application->render('type/edit', Array)
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\CategoryController.php(47): view('type/edit', Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(48): App\Controllers\CategoryController->edit(Array)
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\View.php on line 14
+[13-Apr-2023 11:08:04 Asia/Dhaka] PHP Warning:  Undefined variable $type_name in D:\xampp\htdocs\sage_doc\resources\views\category\edit.php on line 18
+[13-Apr-2023 11:08:04 Asia/Dhaka] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\sage_doc\resources\views\category\edit.php on line 18
+[13-Apr-2023 11:08:04 Asia/Dhaka] PHP Warning:  Undefined variable $type_name in D:\xampp\htdocs\sage_doc\resources\views\category\edit.php on line 19
+[13-Apr-2023 11:08:04 Asia/Dhaka] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\sage_doc\resources\views\category\edit.php on line 19
+[13-Apr-2023 11:15:00 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sage_doc.type' doesn't exist in D:\xampp\htdocs\sage_doc\bootstrap\DB.php:191
+Stack trace:
+#0 D:\xampp\htdocs\sage_doc\bootstrap\DB.php(191): PDO->prepare('UPDATE type SET...')
+#1 D:\xampp\htdocs\sage_doc\app\Controllers\CategoryController.php(57): Core\DB->update(Array)
+#2 D:\xampp\htdocs\sage_doc\bootstrap\Application.php(50): App\Controllers\CategoryController->update(Object(Core\Request))
+#3 D:\xampp\htdocs\sage_doc\routes\web.php(35): Core\Application->run()
+#4 D:\xampp\htdocs\sage_doc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\sage_doc\bootstrap\DB.php on line 191

@@ -1,0 +1,22 @@
+[11-Apr-2023 09:34:15 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:37
+Stack trace:
+#0 D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(37): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\pharmacy-mvc\app\Models\Model.php(10): Core\DB::instance()
+#2 D:\xampp\htdocs\pharmacy-mvc\app\Models\Purchase.php(8): App\Models\Model->__construct()
+#3 D:\xampp\htdocs\pharmacy-mvc\app\Controllers\PurchaseController.php(12): App\Models\Purchase->__construct()
+#4 D:\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(39): App\Controllers\PurchaseController->__construct()
+#5 D:\xampp\htdocs\pharmacy-mvc\routes\web.php(62): Core\Application->run()
+#6 D:\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 37
+[11-Apr-2023 09:34:19 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php:37
+Stack trace:
+#0 D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php(37): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\pharmacy-mvc\app\Models\Model.php(10): Core\DB::instance()
+#2 D:\xampp\htdocs\pharmacy-mvc\app\Models\Brand.php(8): App\Models\Model->__construct()
+#3 D:\xampp\htdocs\pharmacy-mvc\app\Controllers\BrandController.php(11): App\Models\Brand->__construct()
+#4 D:\xampp\htdocs\pharmacy-mvc\bootstrap\Application.php(39): App\Controllers\BrandController->__construct()
+#5 D:\xampp\htdocs\pharmacy-mvc\routes\web.php(62): Core\Application->run()
+#6 D:\xampp\htdocs\pharmacy-mvc\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\pharmacy-mvc\bootstrap\DB.php on line 37
